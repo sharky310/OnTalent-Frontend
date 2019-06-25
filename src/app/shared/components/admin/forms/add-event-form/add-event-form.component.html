@@ -1,0 +1,44 @@
+<form [formGroup]="addEventForm" (ngSubmit)="createEvent()">
+    <div class="form-group row">
+      <label for="name" class="col-3 col-form-label">Name</label> 
+      <div class="col-9">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+                <i class="fas fa-clipboard-list"></i>
+            </div>
+          </div> 
+          <input class="form-control" id="name"  formControlName="name" placeholder="Input name of event" type="text" aria-describedby="nameHelpBlock" required="required">
+        </div> 
+        <span id="emailHelpBlock" class="form-text text-muted">This field is required</span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="dni" class="col-3 col-form-label">Type</label> 
+      <div class="col-9">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+                <i class="far fa-bookmark"></i>
+            </div>
+          </div> 
+          <input class="form-control" id="type" formControlName="type" placeholder="Insert description of event" type="text" aria-describedby="dniHelpBlock" required="required">
+        </div> 
+        <span id="dniHelpBlock" class="form-text text-muted">This field is required</span>
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="id" class="col-3 col-form-label">Id Event</label> 
+        <div class="col-9">
+          <div class="input-group">
+            <input class="form-control" id="id" formControlName="id" placeholder="Insert id of event" type="text" aria-describedby="dniHelpBlock" required="required">
+          </div> 
+          <span id="dniHelpBlock" class="form-text text-muted">This field is required</span>
+        </div>
+      </div>
+    <div class="form-group row">
+      <div class="offset-3 col-9">
+        <button name="submit" type="submit" class="btn btn-primary">Event</button>
+      </div>
+    </div>
+  </form>

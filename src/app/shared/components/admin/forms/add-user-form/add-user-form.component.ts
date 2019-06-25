@@ -34,6 +34,10 @@ export class AddUserFormComponent{
               message: `We are created the user ${this.addUserForm.value['dni']} `,
               variant: 'primary'
           }),
+          this.addUserForm.get('dni').setValue('');
+          this.addUserForm.get('email').setValue('');
+          this.addUserForm.get('first_name').setValue('');
+          this.addUserForm.get('last_name').setValue('');
         ()=>{
             this.toastService.addToast({
               title:'Hey',
