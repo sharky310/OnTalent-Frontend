@@ -14,5 +14,13 @@ export class DocumentService {
         return this.http
             .get(`${environment.apiBaseUrl}/document/list`)
           }
+
+    addDocument({name, file}){
+        const formData = new FormData();
+        formData.append('file', file);
+        return this.http
+            .post(`${environment.apiBaseUrl}/document`, formData, {responseType: 'text'})
+            .pipe();
+     }
 }
     

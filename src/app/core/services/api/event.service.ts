@@ -14,5 +14,15 @@ export class EventService {
         return this.http
             .get(`${environment.apiBaseUrl}/event/list`)
           }
+
+    addEvent({name, type, id}){
+         return this.http
+            .post(`${environment.apiBaseUrl}/event`, {
+              name,
+              type,
+              id,
+            }, {responseType: 'text'})
+            .pipe();
+          }    
 }
     
