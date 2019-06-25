@@ -1,0 +1,49 @@
+<div class="card text-center my-3">
+    <div class="card-header">
+      Greetings
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{this.user['first_name']}}</h5>
+      <p class="card-text">Welcome to the company. Review your information and if you have any questions, please inform us.</p>
+    </div>
+    <div class="card-footer text-muted">
+      Registration date: {{this.user['account_created'] | date: 'dd/MM/yy'}}
+    </div>
+  </div>
+
+  <div class="card mx-auto mb-3" style="width: 18rem;">
+    <div class="card-header text-center">
+      Personal Info
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Data</th>
+          <th scope="col">Content</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <th>First Name</th>
+        <td>{{this.user['first_name']}}</td>
+      </tr>
+      <tr>
+        <th>Last Name</th>
+        <td>{{this.user['last_name']}}</td>
+      </tr>
+      <tr>
+          <th>DNI</th>
+          <td>{{this.user['dni']}}</td>
+      </tr>
+      <tr>
+          <th>Email</th>
+          <td>{{this.user['email']}}</td>
+      </tr>
+      </tbody>
+      </table>
+  </div>
+<!-- 
+  dni: string;
+  first_name: string;
+  last_name: string;
+  email: string; -->

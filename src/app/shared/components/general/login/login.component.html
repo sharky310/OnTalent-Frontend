@@ -1,0 +1,40 @@
+<div class="container">
+
+    <div class="row mx-auto modal-dialog-centered">
+
+      <div class="col-12 col-lg-5 shadow p-3 mx-auto">
+          <h3 class="text-center pb-3">Login system</h3>
+            
+
+          
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" type="text"
+                      formControlName="email"
+                      placeholder="Enter your email" required/>
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input
+                      class="form-control"
+                      type="password"
+                      formControlName="password"
+                      placeholder="Enter your password" required/>
+                  </div>
+                
+               
+    
+                   <br>
+                   <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">LogIn</button>
+    
+                </form>
+              <div>No account yet? <a href="/applyPage">Ask for it</a></div>
+
+
+          </div>
+          
+    </div>
+
+</div>

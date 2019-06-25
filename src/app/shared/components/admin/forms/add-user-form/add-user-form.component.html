@@ -1,0 +1,49 @@
+<form [formGroup]="addUserForm" (ngSubmit)="createUser()">
+    <div class="form-group row">
+      <label for="name" class="col-3 col-form-label">Email</label> 
+      <div class="col-9">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-address-card"></i>
+            </div>
+          </div> 
+          <input class="form-control" id="email"  formControlName="email" placeholder="Input email" type="text" aria-describedby="nameHelpBlock" required="required" class="form-control">
+        </div> 
+        <span id="emailHelpBlock" class="form-text text-muted">This field is required</span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="dni" class="col-3 col-form-label">DNI</label> 
+      <div class="col-9">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-group"></i>
+            </div>
+          </div> 
+          <input class="form-control" id="dni" formControlName="dni" placeholder="Insert dni" type="text" aria-describedby="dniHelpBlock" required="required" class="form-control">
+        </div> 
+        <span id="dniHelpBlock" class="form-text text-muted">This field is required</span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="first_name" class="col-3 col-form-label">First Name</label> 
+      <div class="col-9">
+        <input class="form-control" id="first_name" formControlName="first_name" placeholder="Insert the first name" type="text" required="required" class="form-control" aria-describedby="first_nameHelpBlock"> 
+        <span id="first_nameHelpBlock" class="form-text text-muted">This filed is required</span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Last_Name" class="col-3 col-form-label">Last Name</label> 
+      <div class="col-9">
+        <input class="form-control" id="last_name" formControlName="last_name" placeholder="Insert the last name" type="text" aria-describedby="Last_NameHelpBlock" required="required" class="form-control"> 
+        <span id="Last_NameHelpBlock" class="form-text text-muted">This field is required</span>
+      </div>
+    </div> 
+    <div class="form-group row">
+      <div class="offset-3 col-9">
+        <button name="submit" type="submit" class="btn btn-primary">Add worker</button>
+      </div>
+    </div>
+  </form>

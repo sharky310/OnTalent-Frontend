@@ -1,0 +1,9 @@
+<p class="h5 text-center mt-3">Here is a list of documents we recommend you read before attending your first meeting</p>
+
+<div class="list-group mt-4">
+    <a href="#" class="list-group-item list-group-item-action active">
+      Documents
+    </a>
+    <a *ngFor="let item of this.listDocument" href="#" class="list-group-item list-group-item-action">{{item.name}} </a>
+    
+  </div>
