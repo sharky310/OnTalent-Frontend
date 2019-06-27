@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { UserService } from './core/services/api/user.service';
 import { CoreModule } from './core/core.module';
+import { ChartsModule } from 'ng2-charts';
+import { GraphsModule } from './shared/components/admin/graphs/graphs.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,13 @@ import { CoreModule } from './core/core.module';
     GeneralModule,
     SharedModule,
     FormsModule,
-    CoreModule
+    CoreModule,
+    ChartsModule,
+    GraphsModule
+  ],
+  exports: [
+    ChartsModule,
+    GraphsModule,
   ],
   providers: [AuthService, UserService],
   bootstrap: [AppComponent]

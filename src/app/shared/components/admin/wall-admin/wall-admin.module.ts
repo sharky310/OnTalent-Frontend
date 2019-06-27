@@ -7,6 +7,7 @@ import { AdminEventComponent } from './admin-event/admin-event.component';
 import { AdminDocumentComponent } from './admin-document/admin-document.component';
 import { FormsModule } from '../forms/forms.module';
 import { AdminListUsersComponent } from './admin-list-users/admin-list-users.component';
+import { GraphsModule } from '../graphs/graphs.module';
 
 
 const routes: Routes = [
@@ -34,7 +35,8 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
-    FormsModule
+    FormsModule,
+    GraphsModule
   ],
   exports: [WallAdminComponent, AdminListUsersComponent]
 })

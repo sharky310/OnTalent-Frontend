@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CapitalizePipe } from './pipe/capitalize.pipe';
-import { AddUserFormComponent } from './components/admin/forms/add-user-form/add-user-form.component';  
 import { FormsModule } from '@angular/forms';
+import { GraphsModule } from './components/admin/graphs/graphs.module';
+import { GeneralModule } from './components/general/general.module';
 
 @NgModule({
   declarations: [CapitalizePipe],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    GraphsModule,
+    GeneralModule 
   ],
   exports: [CapitalizePipe]
 })

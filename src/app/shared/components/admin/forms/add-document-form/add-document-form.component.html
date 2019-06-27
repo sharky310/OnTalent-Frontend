@@ -1,3 +1,4 @@
+<div class="container py-3 my-5">
 <form [formGroup]="addDocumentForm" (ngSubmit)="sendDocument()">
     <div class="form-group row">
         <label for="name" class="col-3 col-form-label">Name</label> 
@@ -14,11 +15,17 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="dni" class="col-3 col-form-label">File to upload</label> 
+        <label for="file" class="col-3 col-form-label">File to upload</label> 
         <div class="col-9">
-          <div class="input-group">
-            <input class="form-control" id="file" formControlName="file" placeholder="Insert file" type="file" aria-describedby="dniHelpBlock" required="required">
-          </div> 
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile02">
+                  <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                </div>
+                <div class="input-group-append">
+                  <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                </div>
+              </div>
           <span id="dniHelpBlock" class="form-text text-muted">This field is required</span>
         </div>
       </div>
@@ -29,4 +36,5 @@
         </div>
       
     </form>
+  </div>
     

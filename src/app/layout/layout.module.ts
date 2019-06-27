@@ -8,12 +8,11 @@ import { HeaderLoginComponent } from './components/header-login/header-login.com
 import { FooterComponent } from './components/footer/footer.component';
 import { GeneralModule } from '../shared/components/general/general.module';
 import { ApplyLayoutComponent } from './apply-layout/apply-layout.component';
-import { WallAdminModule } from '../shared/components/admin/wall-admin/wall-admin.module';
 import { AdminNavComponent } from './components/admin-nav/admin-nav.component';
 import { HeaderAdminComponent } from './components/header-admin/header-admin.component';
 import { ToastComponent } from './components/toast/toast.component';
 import { SharedModule } from '../shared/shared.module';
-import { FormsModule } from '../shared/components/admin/forms/forms.module';
+import { GraphsModule } from '../shared/components/admin/graphs/graphs.module';
 
 @NgModule({
   declarations: [LoginLayoutComponent,
@@ -31,6 +30,7 @@ import { FormsModule } from '../shared/components/admin/forms/forms.module';
     RouterModule,
     GeneralModule,
     SharedModule,
+    GraphsModule
   ],
   exports: [
     AdminLayoutComponent,

@@ -1,0 +1,18 @@
+
+  
+ <div class="card">
+    <h5 class="card-header text-center">Events</h5>
+    <div class="card-body">
+        <div>
+            <div>
+              <div>
+                <div style="display: block">
+                  <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+                    [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>  
+    </div>
+  </div>
