@@ -10,7 +10,7 @@ import { ValidationMessagesComponent } from './validation-messages/validation-me
   declarations: [NotFoundComponent,
                 LoginComponent,
                 ApplyFormComponent,
-                ValidationMessagesComponent
+                ValidationMessagesComponent 
                 ],
   imports: [
     CommonModule, FormsModule, ReactiveFormsModule

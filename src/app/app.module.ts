@@ -32,6 +32,7 @@ import { GraphsModule } from './shared/components/admin/graphs/graphs.module';
   exports: [
     ChartsModule,
     GraphsModule,
+    GeneralModule
   ],
   providers: [AuthService, UserService],
   bootstrap: [AppComponent]

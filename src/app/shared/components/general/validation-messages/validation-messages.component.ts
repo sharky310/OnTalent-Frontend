@@ -9,5 +9,4 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class ValidationMessagesComponent{
   @Input() control: FormControl;
   @Input() group: FormGroup;
-
 }

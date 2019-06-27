@@ -4,6 +4,8 @@ import { CapitalizePipe } from './pipe/capitalize.pipe';
 import { FormsModule } from '@angular/forms';
 import { GraphsModule } from './components/admin/graphs/graphs.module';
 import { GeneralModule } from './components/general/general.module';
+import { MarkAsTouchedDirective } from './directives/mark-as-touched.directive';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [CapitalizePipe],
@@ -11,7 +13,8 @@ import { GeneralModule } from './components/general/general.module';
     CommonModule,
     FormsModule,
     GraphsModule,
-    GeneralModule 
+    GeneralModule,
+    ReactiveFormsModule
   ],
   exports: [CapitalizePipe]
 })
