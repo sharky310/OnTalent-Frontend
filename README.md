@@ -1,27 +1,55 @@
-# OnTalent
+# OnTalent Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Ontalent frontend complementa al backend del proyecto OnTalent
 
-## Development server
+## Arranque
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Sigue los pasos que se muestran a continuación para obtener tu copia del proyecto y poder probar el sistema
 
-## Code scaffolding
+### Pre-requisitos 📋
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Primeramente debes obtener tu copia y tener el entorno de desarrollo adecuado (NODE JS):
 
-## Build
+```
+$ git clone https://github.com/sharky310/OnTalent-Frontend.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Instalación 🔧
 
-## Running unit tests
+A continuación deberás instalar las dependencias necesarias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+$ npm install
+```
 
-## Running end-to-end tests
+## Ejecutamos el proyecto ⚙️
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Llegados a este punto debemos arrancar la maquinaria para ponerla a trabajar.
 
-## Further help
+En el proyecto backend a la altura del package.json deberemos ejecutar lo siguiente
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+$ npm run dev
+```
+Mientras que en el proyecto frontend deberemos ejecutar
+
+```
+$ ng serve
+```
+Y a continuación abrir nuestro navegador y acceder a la dirección http://localhost:3000 y empezar a jugar
+
+## Librerías 🛠️
+
+El proyecto OnTalent Backend esta desarrollado con las siguientes librerías
+
+* [ANGULAR](https://angular.io/) - Framework de desarrollo frontend
+* [BOOTSTRAP](https://getbootstrap.com/) - Librería de componentes
+* [CHARTJS](https://www.chartjs.org/) - Librería para edición de graficas
+
+## Contribuyendo 🖇️
+
+Si deseas participar en el proyecto no dudes en ponerte en contacto ontalentapp@gmail.com
+
+## Autores ✒️
+
+* **Miguel Angel Castro Edreira** - *Full stack developer javascript*
